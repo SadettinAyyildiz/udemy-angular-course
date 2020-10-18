@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { DataBindingComponent } from './data-binding.component';
 
 import { Routes, RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 const routes: Routes = [
   {
@@ -15,7 +16,8 @@ const routes: Routes = [
   declarations: [DataBindingComponent],
   imports: [
     CommonModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    FormsModule
   ]
 })
 export class DataBindingModule { }
