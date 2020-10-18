@@ -9,12 +9,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
 import { NgxSpinnerModule } from "ngx-spinner";
 import { RoleComponent } from './role/role.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { IgxNavbarModule, IgxIconModule } from 'igniteui-angular';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    RoleComponent
+    RoleComponent,
+    NavbarComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +35,9 @@ import { RoleComponent } from './role/role.component';
       preventDuplicates: true,
       positionClass: 'toast-bottom-left'
     }),
-    NgxSpinnerModule
+    NgxSpinnerModule,
+    IgxNavbarModule,
+    IgxIconModule
   ],
   providers: [],
   bootstrap: [AppComponent],
