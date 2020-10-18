@@ -8,7 +8,6 @@ import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
 import { NgxSpinnerModule } from "ngx-spinner";
-import { IgxButtonModule } from 'igniteui-angular';
 import { RoleComponent } from './role/role.component';
 
 
@@ -31,8 +30,7 @@ import { RoleComponent } from './role/role.component';
       preventDuplicates: true,
       positionClass: 'toast-bottom-left'
     }),
-    NgxSpinnerModule,
-    IgxButtonModule
+    NgxSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent],
