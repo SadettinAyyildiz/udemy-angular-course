@@ -11,7 +11,7 @@ import { NgxSpinnerModule } from "ngx-spinner";
 import { RoleComponent } from './role/role.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
-import { IgxNavbarModule, IgxIconModule } from 'igniteui-angular';
+import { IgxNavbarModule, IgxIconModule, IgxNavigationDrawerModule } from 'igniteui-angular';
 
 
 @NgModule({
@@ -37,7 +37,8 @@ import { IgxNavbarModule, IgxIconModule } from 'igniteui-angular';
     }),
     NgxSpinnerModule,
     IgxNavbarModule,
-    IgxIconModule
+    IgxIconModule,
+    IgxNavigationDrawerModule
   ],
   providers: [],
   bootstrap: [AppComponent],
